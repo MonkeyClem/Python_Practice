@@ -13,10 +13,11 @@ else :
 
 #Définir des conditions multiples avec des opérateurs logiques : 
 print("Les opérateurs logiques :    ")
+
 avec_soleil = True
 en_semaine = False
 
-if avec_soleil and en_semaine: 
+if avec_soleil or not en_semaine: 
     print("Courage, au boulot !")
 elif avec_soleil and not en_semaine:
     print("Plage, Restau ou Terrasse ?")
