@@ -50,13 +50,19 @@ for number in numberList :
 
 print("La somme des nombres renseignés est : ", somme)
 
+print(len(numberList))
+
 2.
 moyenne = somme / len(numberList)
 print("La moyenne des nombres renseignés est :", moyenne)
 
 3.
+upNumber = 0
+lowNumber = 0
 for number in numberList : 
     if int(number) > moyenne : 
-        print("Nous avons detecté un chiffre / nombre supérieur à la moyenne : ", number)
+        upNumber += 1
+        print("Nous avons detecté un chiffre / nombre supérieur à la moyenne : ",  number , " il s'agit du :" , upNumber,"ème présent dans la liste" )
     else :
-        print("Nous avons détécté un chiffre inférieur à la moyenne : ", number) 
+        lowNumber += 1
+        print("Nous avons détécté un chiffre / nombre  inférieur à la moyenne :", number , " il s'agit du :" , lowNumber,"ème présent dans la liste" ) 
