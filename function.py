@@ -44,11 +44,13 @@ print(final_value)
 # Affichez le résultat sous la forme : "Votre salaire horaire est de XX euros".
 
 
-salaire_annuel = input("Veuillez saisir votre salaire annuel (sans espace) : ")
-nombres_heures = input("Veuillez renseigner le nombre d'heure effectuées par semaine : ")
+salaire_annuel = float(input("Veuillez saisir votre salaire annuel : ").replace(" ", ""))
+# salaire_annuel = salaire_annuel.replace(" ", "")
 
-salaire_annuel = int(salaire_annuel)
-nombres_heures = int(nombres_heures)
+nombres_heures = float(input("Veuillez renseigner le nombre d'heure effectuées par semaine : "))
+
+# salaire_annuel = int(salaire_annuel)
+# nombres_heures = int(nombres_heures)
 
 def salaire_mensuel(salaire_annuel):
     return salaire_annuel / 12 
@@ -68,5 +70,8 @@ salaire_horaire = salaire_horaire(salaire_hebdo, nombres_heures)
 # Affichage du résultat
 print("Votre salaire horaire est de", salaire_horaire, "euros.")
 
+prix_essence = 2
+nombre_kilometre_trajet_travail = 30
 
-
+gas_price_input = float(input("Indiquez le nombre de kilomètre entre votre domicile et votre lieu de travail :").replace(",","."))
+print(gas_price_input)
